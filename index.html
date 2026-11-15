@@ -11,14 +11,13 @@
 <h1>Jomok Subtitle Tool</h1>
 <p>Jomok Subtitle Tool is a private, internal script used by Dr. Jeongmok Cho to manage his own YouTube channel, <a href="https://www.youtube.com/channel/UC-VMUFnRY_Wy6UEOB4hEDFQ">Jomok-Jomok TV</a>. It is not distributed, sold, or offered to any other user.</p>
 <h2>What it does</h2>
-<p>The channel publishes Korean-language medical education videos. Through YouTube API Services, the tool uploads translated subtitle tracks (English, Thai, Russian, Japanese) and localized titles and descriptions to the owner's own videos, so that viewers outside Korea can understand them. It also uploads short clips that the owner cuts from his own videos, adds them to his own playlists, and reads comments on his own videos to plan future topics.</p>
+<p>The channel publishes Korean-language medical education videos. Through YouTube API Services, the tool uploads translated subtitle tracks (English, Thai, Russian, Japanese) and localized titles and descriptions to the owner's own videos, so that viewers outside Korea can understand them. It also uploads short clips that the owner cuts from his own videos and adds them to his own playlists.</p>
 <h2>How it uses YouTube API Services</h2>
 <ul>
 <li>captions.insert / captions.update / captions.list / captions.download / captions.delete — upload, replace and check subtitle tracks on the owner's videos</li>
 <li>videos.list / videos.update — read video metadata and set localized titles and descriptions</li>
 <li>videos.insert — upload short clips cut from the owner's own videos to the owner's channel</li>
 <li>channels.list / playlists.list / playlistItems.list / playlistItems.insert — list the owner's own uploads and add his videos to his playlists</li>
-<li>commentThreads.list / comments.list — read comments on the owner's own videos (stored only on the owner's PC)</li>
 </ul>
 <p>The tool runs on the owner's computer, signs in only with the owner's own Google account (OAuth 2.0), and does not access any other user's data.</p>
 <h2>Policies</h2>
